@@ -13,6 +13,7 @@ export abstract class SoftDeleteEntity extends Entity {
   @property({
     type: 'boolean',
     default: false,
+    hidden: true
   })
   deleted?: boolean;
 
@@ -22,6 +23,7 @@ export abstract class SoftDeleteEntity extends Entity {
     jsonSchema: {
       nullable: true,
     },
+    hidden: true
   })
   deletedOn?: Date;
 
@@ -31,6 +33,7 @@ export abstract class SoftDeleteEntity extends Entity {
     jsonSchema: {
       nullable: true,
     },
+    hidden: true
   })
   deletedBy?: string;
 
