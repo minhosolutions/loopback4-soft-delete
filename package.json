@@ -44,7 +44,7 @@
     "posttest": "npm run lint",
     "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
     "prepublishOnly": "npm run test",
-    "prepare": "husky install"
+    "prepare": "npm run build && husky install"
   },
   "repository": {
     "type": "git",
